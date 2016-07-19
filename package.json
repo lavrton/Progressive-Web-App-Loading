@@ -1,0 +1,27 @@
+{
+  "name": "progressive-app demo",
+  "version": "1.0.0",
+  "description": "Demo of progressive loading for React app",
+  "main": "",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack-dev-config.js --progress --colors --inline",
+    "clear": "rm -rf ./dist",
+    "build": "npm run clear && webpack --config webpack-prod-config.js --progress --colors --inline && cp ./public/index.html ./dist/index.html"
+  },
+  "author": "Anton Lavrenov",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "konva": "^1.0.2",
+    "lodash": "^4.3.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-konva": "^1.0.4",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
