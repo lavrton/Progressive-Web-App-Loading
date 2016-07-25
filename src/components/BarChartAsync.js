@@ -1,6 +1,6 @@
 import React from 'react';
 import AsyncComponent from './AsyncComponent';
-import sceduleLoad from './loader';
+import scheduleLoad from './loader';
 
 const loader = (cb) => {
   require.ensure([], (require) => {
@@ -8,7 +8,7 @@ const loader = (cb) => {
   });
 }
 
-sceduleLoad(loader);
+scheduleLoad(loader);
 
 export default (props) =>
   <AsyncComponent {...props} loader={loader}/>
