@@ -21,7 +21,7 @@ function requestLoad() {
     });
 }
 
-export default function sceduleLoad(loader) {
+export default function scheduleLoad(loader) {
   queue.push(loader);
   requestLoad();
 }
